@@ -5,12 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App</title>
-  <link rel="stylesheet" href="Rohit.css">
+  <link rel="stylesheet" href="pricing.css">
 </head>
 <body>
-
   <div class="container">
-    
     <div class="pricing">
       <table id="pricing-table">
         <thead>
@@ -18,6 +16,7 @@
             <th>Test Name</th>
             <th>B2B</th>
             <th>B2C</th>
+            <th>Actions</th> <!-- Added Actions column -->
           </tr>
         </thead>
         <tbody id="pricing-tbody">
@@ -39,8 +38,7 @@
       </div>
     </div>
   </div>
-  <script src="Rohit.js"></script>
-  </body>
+  <script src="pricing.js"></script>
+</body>
 </html>
-
-<?php include "includes/footer.php" ?>
+<?php include "includes/footer.php"; ?>

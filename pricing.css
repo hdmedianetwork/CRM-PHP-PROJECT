@@ -1,10 +1,9 @@
-body {
- 
-}
+body {}
 
 .container {
   display: flex;
   width: 100%;
+  margin-top: 15vh;
 }
 
 .sidebar {
@@ -101,4 +100,26 @@ label {
 
 .hidden {
   display: none;
+}
+
+/* Add these styles for the new buttons */
+.edit-button,
+.delete-button {
+  margin: 0 4px;
+}
+
+.edit-button {
+  background-color: #38a169;
+}
+
+.edit-button:hover {
+  background-color: #2f855a;
+}
+
+.delete-button {
+  background-color: #e53e3e;
+}
+
+.delete-button:hover {
+  background-color: #c53030;
 }

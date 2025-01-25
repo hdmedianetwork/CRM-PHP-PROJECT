@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="pricing.css">
 </head>
 <body>
+  
   <div class="container">
     <div class="pricing">
       <table id="pricing-table">
@@ -38,7 +39,10 @@
       </div>
     </div>
   </div>
+  <div class="footer">
+  <?php include "includes/footer.php"; ?>
+
+  </div>
   <script src="pricing.js"></script>
 </body>
 </html>
-<?php include "includes/footer.php"; ?>

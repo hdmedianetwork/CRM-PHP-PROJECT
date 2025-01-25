@@ -19,8 +19,11 @@
       </button>
     </div>
   </div>
+  <div class="footer" >
+  <?php include "includes/footer.php"; ?>
+
+  </div>
   <script src="report.js"></script>
 </body>
 </html>
 
-<?php include "includes/footer.php"; ?>

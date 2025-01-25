@@ -1,3 +1,4 @@
+<?php include "includes/header.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +8,9 @@
   <link rel="stylesheet" href="Rohit.css">
 </head>
 <body>
+
   <div class="container">
-    <div class="sidebar">
-      <ul>
-        <li class="menu-item"><img src="src/images/assets/Home.png" alt="Home"> Dashboard</li>
-        <li class="menu-item"><img src="src/images/assets/lab.png" alt="Book Test"> Book Test</li>
-        <li class="menu-item"><img src="src/images/assets/file.png" alt="Recent Booking"> Recent Booking</li>
-        <li class="menu-item"><img src="src/images/assets/wallet.png" alt="Wallet"> Wallet</li>
-        <li class="menu-item"><img src="src/images/assets/file.png" alt="File Management"> File Management</li>
-      </ul>
-    </div>
+    
     <div class="pricing">
       <table id="pricing-table">
         <thead>
@@ -46,5 +40,7 @@
     </div>
   </div>
   <script src="Rohit.js"></script>
-</body>
+  </body>
 </html>
+
+<?php include "includes/footer.php" ?>

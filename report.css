@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f9fa; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-top: 15vh;
+  }
+  
+  .header {
+    font-size: 30px;
+    font-weight: 600;
+    color: #dc3545; /* Red color */
+    text-align: center;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White background */
+    border-bottom: 2px solid #dc3545; /* Red border */
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .report {
+    margin-top: 20px;
+    border: 2px solid #dc3545; /* Red border */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  }
+  
+  .download-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .download-icon {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+  .footer{
+    height: fit-content;  
+        text-align: center;
+        border-top: 1px solid #e2e8f0;
+        width: 100%;
+        position: fixed;
+        bottom: -15px;
+    }
+    @media   (min-width:1301px) {
+        .container{
+            width: 80vw;
+            margin-left: auto;
+            margin-right: 0px;
+            transition: 0.2s ease-out;
+        }
+        
+    }

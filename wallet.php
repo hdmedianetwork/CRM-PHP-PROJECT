@@ -28,9 +28,29 @@
     </div>
   </div>
   <div class="footer">
-  <?php include "includes/footer.php"; ?>
-
+    <?php include "includes/footer.php"; ?>
   </div>
-  <script src="script.js"></script>
+
+  <!-- Popup Modal -->
+  <div id="add-money-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Add Money</h2>
+      <form id="add-money-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="upi-reference">UPI Reference Number:</label>
+        <input type="text" id="upi-reference" name="upi-reference" required>
+        
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="wallet.js"></script>
 </body>
 </html>

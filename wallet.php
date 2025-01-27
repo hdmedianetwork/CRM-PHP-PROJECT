@@ -1,6 +1,5 @@
 <?php include "includes/header.php"; ?>
 
-<link rel="stylesheet" type="text/css" href="src/styles/wallet.css">
 <div class="main-container">
   <h1 class="wallet-header">
     <img src="src/images/wallet.jpg" class="wallet-icon" alt="Wallet Icon">
@@ -43,6 +42,5 @@
 </div>
 
 <script src="src/scripts/wallet.js"></script>
-<script src="script.js"></script>
 
 <?php include "includes/footer.php"; ?>

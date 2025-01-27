@@ -1,6 +1,5 @@
 <?php include "includes/header.php"; ?>
 
-<link rel="stylesheet" type="text/css" href="src/styles/pricing.css">
 <div class="main-container">
   <div class="pricing">
     <table id="pricing-table">

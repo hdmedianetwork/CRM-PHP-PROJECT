@@ -1,4 +1,14 @@
-<?php include "includes/functions.php"; ?>
+<?php include "includes/functions.php";
+
+
+// Check if the user is already logged in
+if (isset($_SESSION['id'])) {
+	// If logged in, redirect to the index page
+	header('Location: index.php');
+	exit();
+}
+
+?>
 
 <!DOCTYPE html>
 <html>

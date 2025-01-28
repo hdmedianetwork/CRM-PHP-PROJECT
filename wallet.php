@@ -16,7 +16,7 @@
     </h1>
     <div class="balance">
       <div class="left">
-        <h3>Wallet Balance:</h3>
+        <h3>Wallet Balance: </h3>
         <h1>₹0</h1>
         <h1>Remark:</h1>
         <button id="add-money-btn">Add Money</button>

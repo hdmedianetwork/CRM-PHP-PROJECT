@@ -1,4 +1,4 @@
-<div class="footer-wrap pd-20 mb-20 card-box" style="margin-top:30px; text-align: right;">
+<div class="footer-wrap pd-20 mb-20 card-box" style="margin-top:auto; margin-bottom:0px; text-align: right;">
     © 2025 BookMyLabs, All Rights Reserved. 
     <!-- Add content to the link or remove it if unnecessary -->
     

@@ -1,9 +1,13 @@
+
+<?php include "includes/header.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franchise Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,12 +15,17 @@
             background-color: #f5f5f5;
         }
         form {
+            margin-top: 30vh;
+
             background: #fff;
             padding: 20px;
             border-radius: 8px;
             max-width: 600px;
             margin: auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        
+    
         }
         input, textarea, button {
             width: 100%;
@@ -33,13 +42,27 @@
             color: white;
             border: none;
             cursor: pointer;
+            
         }
         button:hover {
             background-color: #45a049;
         }
+        .container{
+            margin-top :10vh;
+
+        }
+        .footer{
+    height: fit-content;  
+        text-align: center;
+        border-top: 1px solid #e2e8f0;
+        width: 100%;
+
+        bottom: -15px;
+    }
     </style>
 </head>
 <body>
+<div class="container">
 
     <form action="/submit_form" method="POST" enctype="multipart/form-data">
         <h2>Franchise Registration Form</h2>
@@ -55,13 +78,13 @@
 
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-
+        
         <label for="address">Address</label>
         <textarea id="address" name="address" rows="4" required></textarea>
-
+        
         <label for="pinCode">Pin Code</label>
         <input type="text" id="pinCode" name="pinCode" pattern="[0-9]{6}" required>
-
+        
         <label for="aadhaarNo">Aadhaar Number</label>
         <input type="text" id="aadhaarNo" name="aadhaarNo" pattern="[0-9]{12}" required>
 
@@ -73,15 +96,18 @@
 
         <label for="panUpload">Upload PAN</label>
         <input type="file" id="panUpload" name="panUpload" accept=".pdf,.jpg,.jpeg,.png" required>
-
+        
         <label for="ownerPhoto">Owner Photo</label>
         <input type="file" id="ownerPhoto" name="ownerPhoto" accept=".jpg,.jpeg,.png" required>
-
+        
         <label for="ownerSignature">Owner Signature</label>
         <input type="file" id="ownerSignature" name="ownerSignature" accept=".jpg,.jpeg,.png" required>
-
+        
         <button type="submit">Submit</button>
     </form>
-
+    <div class="footer">
+        <?php include "includes/footer.php"; ?>
+    </div>
+</div>
 </body>
 </html>

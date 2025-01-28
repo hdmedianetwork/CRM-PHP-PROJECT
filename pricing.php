@@ -38,11 +38,12 @@
         <button id="cancel-button">Cancel</button>
       </div>
     </div>
-  </div>
-  <div class="footer">
+    <div class="lar"  >
   <?php include "includes/footer.php"; ?>
-
   </div>
+  </div>
+
+  
   <script src="pricing.js"></script>
 </body>
 </html>

@@ -62,7 +62,9 @@ body {
         text-align: center;
         border-top: 1px solid #e2e8f0;
         width: 100%;
-        position: fixed;
+        margin-top: auto;
+    margin-bottom:0px;
+    position: absolute;
         bottom: -15px;
     }
     @media   (min-width:1301px) {

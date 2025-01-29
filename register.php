@@ -40,13 +40,13 @@
 	<div class="login-header box-shadow">
 		<div class="container-fluid d-flex justify-content-between align-items-center">
 			<div class="brand-logo">
-				<a href="login.php">
+				<a href="/login">
 					<img src="vendors/images/deskapp-logo.svg" alt="">
 				</a>
 			</div>
 			<div class="login-menu">
 				<ul>
-					<li><a href="login.php">Login</a></li>
+					<li><a href="/login">Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -254,7 +254,7 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				</div>
 				<div class="modal-footer justify-content-center">
-					<a href="login.php" class="btn btn-primary">Done</a>
+					<a href="/login" class="btn btn-primary">Done</a>
 				</div>
 			</div>
 		</div>

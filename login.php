@@ -1,4 +1,13 @@
-<?php include "includes/functions.php"; ?>
+<?php include "includes/functions.php";
+
+// Check if the user is already logged in
+if (isset($_SESSION['id'])) {
+	// If logged in, redirect to the index page
+	header('Location: index');
+	exit();
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -64,10 +73,15 @@
 						<div class="login-title">
 							<h2 class="text-center text-primary">Login </h2>
 						</div>
-						<form action="login.php" id="loginForm" method="POST" class="form">
+						<form action="login" id="loginForm" method="POST" class="form">
 							<?php loginUser();
 							displayMessage();
 							?>
+
+							<!-- CSRF Token -->
+							<input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+
+
 							<div class="input-group custom">
 								<input type="text" name="username" id="username" class="form-control form-control-lg" placeholder="Username" required data-validation-required-message="Please enter username">
 								<div class="input-group-append custom">
@@ -103,10 +117,10 @@
 									</div>
 									<div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373"></div>
 									<div class="input-group mb-0">
-
 									</div>
 								</div>
 							</div>
+
 						</form>
 					</div>
 				</div>

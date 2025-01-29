@@ -1,3 +1,12 @@
+<?php
+include "functions.php";
+
+if (!isset($_SESSION['id']) || !isset($_SESSION['username'])) {
+    header("Location: login");
+    exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="src/plugins/datatables/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/styles/style.css">
     <link rel="stylesheet" type="text/css" href="src/plugins/jquery-steps/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/wallet.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/pricing.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/report.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -67,11 +79,11 @@
                         <span class="user-icon">
                             <img src="vendors/images/photo1.jpg" alt="">
                         </span>
-                        <span class="user-name">Username</span>
+                        <span class="user-name"><?php echo $_SESSION['username']; ?></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                        <a class="dropdown-item" href="profile.php"><i class="dw dw-user1"></i> Profile</a>
-                        <a class="dropdown-item" href="logout.php"><i class="dw dw-logout"></i> Log Out</a>
+                        <a class="dropdown-item" href="profile"><i class="dw dw-user1"></i> Profile</a>
+                        <a class="dropdown-item" href="includes/logout"><i class="dw dw-logout"></i> Log Out</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +92,7 @@
 
     <div class="left-side-bar">
         <div class="brand-logo" style="margin-top: 30px;">
-            <a href="index.php">
+            <a href="index">
                 <img src="vendors/images/dark.png" alt="" class="dark-logo">
                 <img src="vendors/images/dark.png" alt="" class="light-logo">
             </a>
@@ -92,27 +104,27 @@
             <div class="sidebar-menu">
                 <ul id="accordion-menu">
                     <li class="dropdown">
-                        <a href="index.php" class="dropdown-toggle no-arrow">
+                        <a href="index" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="./booktest.php" class="dropdown-toggle no-arrow">
+                        <a href="booktest" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-invoice"></span><span class="mtext">Book Test</span>
                         </a>
                     </li>
                     <li>
-                        <a href="./allbookings.php" class="dropdown-toggle no-arrow">
+                        <a href="allbookings" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-invoice"></span><span class="mtext">Recent Bookings</span>
                         </a>
                     </li>
                     <li>
-                        <a href="invoice.html" class="dropdown-toggle no-arrow">
+                        <a href="wallet" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-invoice"></span><span class="mtext">Wallet</span>
                         </a>
                     </li>
                     <li>
-                        <a href="invoice.html" class="dropdown-toggle no-arrow">
+                        <a href="report" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-invoice"></span><span class="mtext">Reports</span>
                         </a>
                     </li>
@@ -121,6 +133,3 @@
         </div>
     </div>
     <div class="mobile-menu-overlay"></div>
-</body>
-
-</html>

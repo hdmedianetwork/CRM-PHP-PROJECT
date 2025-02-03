@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="product-caption" style="text-align: center;">
                                         <h4><a href="#"><?php echo $lab['name']; ?></a></h4>
-                                        <a href="#" class="btn btn-outline-primary" style="margin-top: 10px;">Select</a>
+                                        <a href="testform.php" class="btn btn-outline-primary" style="margin-top: 10px;">Select </a>
                                     </div>
                                 </div>
                             </li>

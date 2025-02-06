@@ -40,10 +40,14 @@
 
 .cards {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next row */
     gap: 10px;
-    height: fit-content;
-    /* Background-color removed for better visual styling */
+    justify-content: center; /* Center cards properly */
+    padding: 10px;
 }
+
+
+
 
 .imagecontainer {
     display: flex;

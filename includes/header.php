@@ -106,7 +106,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
         </div>
     </div>
     <div class="left-side-bar" style="background-color:white; " >
-        <div class="brand-logo" style="margin-top: 20px;" >
+        <div class="brand-logo" style="margin-top: 30px;" >
             <a href="index">
                 <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="dark-logo">
                 <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="light-logo">
@@ -145,6 +145,13 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
                     </li>
 
 
+                     <li>
+                        <a href="accountstatement" class="dropdown-toggle no-arrow">
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Account Statement</span>
+                        </a>
+                    </li>
+
+
                     
                     <li>
                         <a href="logout" class="dropdown-toggle no-arrow" style="position: fixed; bottom: 0;">
@@ -155,4 +162,4 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
             </div>
         </div>
     </div>
-    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu-overlay"></div> accountstatement

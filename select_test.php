@@ -2,8 +2,6 @@
 include "includes/header.php";
 global $db_conn;
 
-// $franchise_id = $_SESSION['id'];
-// $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
 $fetchLabTestNamesQuery = "SELECT test_name, B2B, B2C FROM test_details";
 $query = query($fetchLabTestNamesQuery);
 confirm($query);
@@ -30,27 +28,21 @@ if (isset($_GET['lab_name'])) {
                         <?php while ($row = mysqli_fetch_array($query)) { ?>
                             <div class="card">
                                 <div class="insidecard">
-
-                                    <!-- <div class="d-flex justify-content-center align-items-center mb-3"> -->
-                                    <!-- <i class="fas fa-heartbeat fa-3x text-danger"></i> -->
-
-                                    <!-- </div> -->
-                                    <h4 class="ctop"> <span> <?php echo $row['test_name']; ?></h4></span>
+                                    <h4 class="ctop">
+                                        <span class="test-name" title="<?php echo $row['test_name']; ?>"><?php echo $row['test_name']; ?></span>
+                                    </h4>
                                     <p class="clinova">
-                                        <i class=""></i>
                                         <img src="vendors/images/assets/medicalhand.png" alt="">
                                         Clinova
                                     </p>
                                     <p class="price">
-                                        <span class="linethrough">1500</span>
+                                        <!-- <span class="linethrough">1500</span> -->
                                         <span class="reducedprice">&#8377; <?php echo $row['B2C']; ?></span>
                                     </p>
                                     <label class="checkbox">
                                         <div>
-
                                             <input type="checkbox" name="selected_tests[]" value="<?php echo $row['test_name']; ?>" class="box">
                                         </div>
-                                        <!-- <span>Select Test</span> -->
                                     </label>
                                 </div>
                             </div>
@@ -67,5 +59,4 @@ if (isset($_GET['lab_name'])) {
 </div>
 <?php include "includes/footer.php"; ?>
 </body>
-
 </html>

@@ -335,11 +335,11 @@ function rechargeRequests()
         $query = query($rechargeWalletQuery);
         confirm($query);
 
-        if (confirm($query)) {
-            echo "Your request has been submitted and is pending for approval";
-        } else {
-            echo "There was an error submitting your request. Please try again.";
-        }
+        // if (confirm($query)) {
+        //     echo "Your request has been submitted and is pending for approval";
+        // } else {
+        //     echo "There was an error submitting your request. Please try again.";
+        // }
     }
 }
 
@@ -353,9 +353,9 @@ function rechargeRequests()
 // function viewAllLabs() is used to view all the labs
 function viewAllLabs()
 {
-    global $db_conn;
-    $franchise_id = $_SESSION['id'];
-    $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
+    // global $db_conn;
+    // $franchise_id = $_SESSION['id'];
+    // $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
 
     $viewAllLabsQuery = "SELECT * FROM labs";
     $query = query($viewAllLabsQuery);

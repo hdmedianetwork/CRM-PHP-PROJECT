@@ -106,7 +106,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
         </div>
     </div>
     <div class="left-side-bar" style="background-color:white; " >
-        <div class="brand-logo" style="margin-top: 30px;" >
+        <div class="brand-logo" style="margin-top: 31px;" >
             <a href="index">
                 <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="dark-logo">
                 <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="light-logo">

@@ -1,7 +1,7 @@
 <?php include "includes/header.php"; ?>
 
 <div class="main-container" style="padding-top: 5px;">
-  <div class="container" style="height: 100px; width: 100%;">
+  <div class="container" style="height: 100px; width: 100%; margin-top: 80px;">
     <div class="col-md-12 col-sm-12">
       <div class="title">
         <h4>

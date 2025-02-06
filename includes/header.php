@@ -37,7 +37,6 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
     <link rel="stylesheet" type="text/css" href="src/styles/wallet.css">
     <link rel="stylesheet" type="text/css" href="src/styles/pricing.css">
     <link rel="stylesheet" type="text/css" href="src/styles/report.css">
-    <link rel="stylesheet" type="text/css" href="src/styles/booktest.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
@@ -53,6 +52,20 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
 
         gtag('config', 'UA-119386393-1');
     </script>
+
+
+
+<style>
+    .sidebar-menu > ul > li > .dropdown-toggle.active {
+	background-color: rgba(0, 40, 255, 0.12);
+	border-radius: 10px;
+}
+
+.sidebar-menu .dropdown-toggle:hover, .sidebar-menu .show > .dropdown-toggle {
+	background-color: rgba(0, 40, 255, 0.12);
+	/* border-radius: 1 0px; */
+}
+    </style>
 </head>
 
 <body>
@@ -72,7 +85,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
         <div class="header-left">
             <div class="menu-icon dw dw-menu"></div>
             <div class="header-search">
-                <h6>BOOK MY LABS</h6>
+                <h6 style=" ">BOOK MY LABS</h6>
             </div>
         </div>
         <div class="header-right">
@@ -92,11 +105,11 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
             </div>
         </div>
     </div>
-    <div class="left-side-bar">
-        <div class="brand-logo" style="margin-top: 30px;">
+    <div class="left-side-bar" style="background-color:white; " >
+        <div class="brand-logo" style="margin-top: 20px;" >
             <a href="index">
-                <img src="vendors/images/dark.png" alt="" class="dark-logo">
-                <img src="vendors/images/dark.png" alt="" class="light-logo">
+                <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="dark-logo">
+                <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="light-logo">
             </a>
             <div class="close-sidebar" data-toggle="left-sidebar-close">
                 <i class="ion-close-round"></i>
@@ -107,32 +120,35 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
                 <ul id="accordion-menu">
                     <li class="dropdown">
                         <a href="index" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-house-1"></span><span class="mtext">Home</span>
+                            <span class="micon dw dw-house-1" style="color:black;"></span><span class="mtext" style="color:black;">Home</span>
                         </a>
                     </li>
                     <li>
                         <a href="booktest" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice"></span><span class="mtext">Book Test</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Book Test</span>
                         </a>
                     </li>
                     <li>
                         <a href="allbookings" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice"></span><span class="mtext">Recent Bookings</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Recent Bookings</span>
                         </a>
                     </li>
                     <li>
                         <a href="wallet" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice"></span><span class="mtext">Wallet</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Wallet</span>
                         </a>
                     </li>
                     <li>
                         <a href="report" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice"></span><span class="mtext">Reports</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Reports</span>
                         </a>
                     </li>
+
+
+                    
                     <li>
                         <a href="logout" class="dropdown-toggle no-arrow" style="position: fixed; bottom: 0;">
-                            <span class="micon dw dw-logout"></span><span class="mtext">Logout</span>
+                            <span class="micon dw dw-logout" style="color:black;"></span><span class="mtext" style="color:black;">Logout</span>
                         </a>
                     </li>
                 </ul>

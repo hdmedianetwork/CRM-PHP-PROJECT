@@ -1,9 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa; /* Light grey background */
-  margin: 0;
-  padding: 0;
-}
+
 
 .container {
   height: 100vh;
@@ -17,21 +12,6 @@ body {
   margin-top: 15vh;
 }
 
-.header {
-  font-size: 30px;
-  font-weight: 600;
-  color: #dc3545; /* Red color */
-  text-align: center;
-  height: 12vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff; /* White background */
-  border-bottom: 2px solid #dc3545; /* Red border */
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
 
 .report {
   margin-top: 20px;
@@ -57,14 +37,7 @@ body {
   width: 40px;
   object-fit: contain;
 }
-.footer{
-  height: fit-content;  
-      text-align: center;
-      border-top: 1px solid #e2e8f0;
-      width: 100%;
-      position: fixed;
-      bottom: -15px;
-  }
+
   @media   (min-width:1301px) {
       .container{
           width: 80vw;

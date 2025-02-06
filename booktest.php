@@ -3,7 +3,7 @@ include "includes/db.php";
 include "includes/header.php";
 
 ?>
-
+<link rel="stylesheet" href="src\styles\booktest.css" class="css">
 <div class="mobile-menu-overlay"></div>
 <div class="main-container">
     <div class="pd-ltr-20 xs-pd-20-10">
@@ -25,7 +25,7 @@ include "includes/header.php";
             </div>
 
             <div class="search">
-                <img src="vendors/images/search.jpeg" alt="">
+                <img src="https://cdn-icons-png.flaticon.com/512/2652/2652234.png" alt="">
                 <input type="text" placeholder="Search Labs...">
             </div>
 
@@ -83,7 +83,7 @@ include "includes/header.php";
                                         <img src="src/images/<?php echo $lab['lab_logo']; ?>" alt="" style="max-width: 100%; height: auto;">
                                     </div>
                                     <div class="bottom" style="">
-                                        <h4> <img src="vendors/images/<?php echo $lab['lab_logo']; ?>" alt=""> <a href="#"><?php echo htmlspecialchars($lab['lab_name']); ?></a></h4>
+                                        <h4> <img src="https://cdn-icons-png.flaticon.com/512/620/620423.png" alt=""> <a href="#"><?php echo htmlspecialchars($lab['lab_name']); ?></a></h4>
                                         <a href="select_test?lab_name=<?php echo $lab['lab_name']; ?>" class="btn btn-outline-primary" style="margin-top: 10px;">Select</a>
                                     </div>
                                 </div>

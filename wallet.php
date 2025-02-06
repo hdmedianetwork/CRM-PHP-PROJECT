@@ -17,7 +17,7 @@
       </nav>
     </div>
   </div>
-  <div class="balance" style="width: 100%;">
+  <div class="balance" style="width: 50%;">
     <div class="left">
       <h3>Wallet Balance:</h3>
       <h1>₹<?php fetchWalletBalance(); ?></h1>

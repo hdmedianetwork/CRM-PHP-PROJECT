@@ -44,7 +44,7 @@
 
         <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="dashboard-card net-partner">
-                <h5>Net Partner</h5>
+                <h5>Net Partners</h5>
                 <p>0</p>
             </div>
         </div>

@@ -137,50 +137,53 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
             </div>
         </div>
         <div class="menu-block customscroll" style="margin-top: 30px;">
-            <div class="sidebar-menu">
-                <ul id="accordion-menu">
-                    <li class="dropdown">
-                        <a href="index" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-house-1" style="color:black;"></span><span class="mtext" style="color:black;"><b>Home</b></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="booktest" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Book Test</b></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="allbookings" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Recent Bookings</b></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wallet" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Wallet</b></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="report" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Reports</b></span>
-                        </a>
-                    </li>
+    <div class="sidebar-menu">
+        <ul id="accordion-menu">
+            <li class="dropdown">
+                <a href="index" class="dropdown-toggle no-arrow">
+                    <span class="micon dw dw-house-1" style="color:black;"></span>
+                    <span class="mtext" style="color:black;"><b>Dashboard</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="booktest" class="dropdown-toggle no-arrow">
+                    <span class="micon dw dw-edit2" style="color:black;"></span>
+                    <span class="mtext" style="color:black;"><b>Book Test</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="allbookings" class="dropdown-toggle no-arrow">
+                    <span class="micon dw dw-list3" style="color:black;"></span>
+                    <span class="mtext" style="color:black;"><b>Recent Bookings</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="wallet" class="dropdown-toggle no-arrow">
+                    <span class="micon dw dw-wallet" style="color:black;"></span>
+                    <span class="mtext" style="color:black;"><b>Wallet</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="report" class="dropdown-toggle no-arrow">
+                    <span class="micon dw dw-bar-chart" style="color:black;"></span>
+                    <span class="mtext" style="color:black;"><b>Reports</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="accountstatement" class="dropdown-toggle no-arrow">
+                    <span class="micon dw dw-file" style="color:black;"></span>
+                    <span class="mtext" style="color:black;"><b>Account Statement</b></span>
+                </a>
+            </li>
+            <li>
+                <a href="logout" class="dropdown-toggle no-arrow" style="position: fixed; bottom: 0;">
+                    <span class="micon dw dw-logout" style="color:black;"></span>
+                    <span class="mtext" style="color:black;"><b>Logout</b></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 
-
-                     <li>
-                        <a href="accountstatement" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Account Statement</b></span>
-                        </a>
-                    </li>
-
-
-                    
-                    <li>
-                        <a href="logout" class="dropdown-toggle no-arrow" style="position: fixed; bottom: 0;">
-                            <span class="micon dw dw-logout" style="color:black;"></span><span class="mtext" style="color:black;"><b>Logout</b></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
     <div class="mobile-menu-overlay"></div>

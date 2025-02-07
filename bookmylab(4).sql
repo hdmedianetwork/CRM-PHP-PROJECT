@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Feb 06, 2025 at 07:24 AM
+-- Host: 127.0.0.1
+-- Generation Time: Feb 07, 2025 at 02:16 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -76,9 +76,23 @@ CREATE TABLE `labs` (
 --
 
 INSERT INTO `labs` (`id`, `franchise_id`, `lab_name`, `lab_logo`, `created_at`) VALUES
-(1, 0, 'mysql', 'img1.jpg', '2025-01-15 11:59:05.000000'),
-(2, 0, 'mongodb', 'img2.jpg', '2025-01-15 11:59:05.000000'),
-(3, 1, 'new_updated', 'login-page-img.png', '2025-02-04 11:27:10.000000');
+(12, 1, 'PathCare Diagnostics', 'pathcare.png', '2025-02-07 18:23:25.000000'),
+(13, 1, 'Max HealthCare', 'WhatsApp Image 2025-01-25 at 6.05.32 PM (1).png', '2025-02-07 18:24:53.000000'),
+(14, 1, 'ONCQUEST Laboratories', 'WhatsApp Image 2025-01-25 at 6.05.32 PM (2).png', '2025-02-07 18:25:35.000000'),
+(15, 1, 'Aglius Diagnostics', 'WhatsApp Image 2025-01-25 at 6.05.32 PM (3).png', '2025-02-07 18:25:54.000000'),
+(16, 1, 'General Diagnostics', 'WhatsApp Image 2025-01-25 at 6.05.32 PM (4).png', '2025-02-07 18:26:09.000000'),
+(17, 1, 'Healthians', 'WhatsApp Image 2025-01-25 at 6.05.32 PM.png', '2025-02-07 18:26:23.000000'),
+(18, 1, 'Neuberg Diagnostic', 'WhatsApp Image 2025-01-25 at 6.05.33 PM (1).png', '2025-02-07 18:26:37.000000'),
+(19, 1, 'SagePath', 'WhatsApp Image 2025-01-25 at 6.05.33 PM.png', '2025-02-07 18:26:49.000000'),
+(20, 1, 'Lancet Diagnostics', 'WhatsApp Image 2025-01-25 at 6.08.56 PM.png', '2025-02-07 18:27:04.000000'),
+(21, 1, 'HY Patho Lab', 'WhatsApp Image 2025-01-25 at 6.12.31 PM (2).png', '2025-02-07 18:27:17.000000'),
+(22, 1, 'Apollo Diagnostics', 'WhatsApp Image 2025-01-25 at 6.12.31 PM.png', '2025-02-07 18:27:34.000000'),
+(23, 1, 'Reliance Medlab', 'WhatsApp Image 2025-01-25 at 6.12.50 PM.png', '2025-02-07 18:27:48.000000'),
+(24, 1, 'INDIRA PathLabs', 'WhatsApp Image 2025-01-25 at 6.05.30 PM.png', '2025-02-07 18:27:56.000000'),
+(25, 1, 'Pathkind Labs', 'WhatsApp Image 2025-01-25 at 6.05.31 PM (1).png', '2025-02-07 18:28:08.000000'),
+(26, 1, 'Redcliffe Labs', 'WhatsApp Image 2025-01-25 at 6.05.31 PM (5).png', '2025-02-07 18:28:22.000000'),
+(27, 1, 'TATA 1mg', 'WhatsApp Image 2025-01-25 at 6.05.31 PM (6).png', '2025-02-07 18:28:31.000000'),
+(28, 1, 'Dr Lal Pathlabs', 'WhatsApp Image 2025-01-25 at 6.05.31 PM.png', '2025-02-07 18:28:42.000000');
 
 -- --------------------------------------------------------
 
@@ -2734,7 +2748,7 @@ ALTER TABLE `franchises`
 -- AUTO_INCREMENT for table `labs`
 --
 ALTER TABLE `labs`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `recharge_requests`

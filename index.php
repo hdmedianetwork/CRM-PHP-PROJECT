@@ -22,7 +22,7 @@
                 </div>
 
 
-					<div class="row gy-4"> 
+<div class="row gy-4"> 
         <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="dashboard-card revenue">
                 <h5>Total Revenue</h5>
@@ -35,12 +35,12 @@
                 <p>0</p>
             </div>
         </div>
-        <div class="col-md-4" style="margin-bottom: 20px;">
+        <!-- <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="dashboard-card healthfit">
                 <h5>BookMyLabs Share</h5>
                 <p>0</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="dashboard-card net-partner">
@@ -103,33 +103,34 @@
             font-weight: bold;
         }
         .dashboard-card::after {
-            content: "";
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            width: 80px;
-            height: 80px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0.2;
-        }
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: 10px;
+    width: 150px; /* Increased from 80px */
+    height: 150px; /* Increased from 80px */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
         .revenue { background: #e0ffe0; }
-        .revenue::after { background-image: url('https://img.icons8.com/ios/100/rupee.png'); }
+        .revenue::after { background-image: url('https://cdn-icons-png.flaticon.com/512/536/536011.png'); }
 
         .booking { background: #e0f0ff; }
-        .booking::after { background-image: url('https://img.icons8.com/ios/100/calendar.png'); }
+        .booking::after { background-image: url('https://cdn-icons-png.flaticon.com/512/489/489848.png'); }
 
         .healthfit { background: #e6e9ff; }
-        .healthfit::after { background-image: url('https://img.icons8.com/ios/100/clock.png'); }
+        .healthfit::after { background-image: url('https://cdn-icons-png.flaticon.com/512/1322/1322246.png'); }
 
         .net-partner { background: #e0ffe0; }
-        .net-partner::after { background-image: url('https://img.icons8.com/ios/100/wallet.png'); }
+        .net-partner::after { background-image: url('https://cdn-icons-png.flaticon.com/512/1322/1322246.png'); }
 
         .rejected { background: #ffe0e0; }
-        .rejected::after { background-image: url('https://img.icons8.com/ios/100/cancel.png'); }
+        .rejected::after { background-image: url('https://cdn-icons-png.flaticon.com/512/3293/3293868.png'); }
 
         .completed { background: #e0fffa; }
-        .completed::after { background-image: url('https://img.icons8.com/ios/100/checkmark.png'); }
+        .completed::after { background-image: url('https://cdn-icons-png.flaticon.com/512/58/58679.png'); }
 
         .processing { background: #fff5e0; }
         .processing::after { background-image: url('https://img.icons8.com/ios/100/hourglass.png'); }
@@ -138,7 +139,7 @@
         .pending::after { background-image: url('https://img.icons8.com/ios/100/clock.png'); }
 
         .resample { background: #f0e6ff; }
-        .resample::after { background-image: url('https://img.icons8.com/ios/100/clock.png'); }
+        .resample::after { background-image: url('https://cdn-icons-png.flaticon.com/512/126/126502.png'); }
     </style>
 
 

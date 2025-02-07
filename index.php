@@ -86,6 +86,37 @@
             </div>
         </div>
         <style>
+
+
+.dashboard-card {
+   
+   
+ 
+    transition: all 0.3s ease-in-out;
+    min-height: 120px; /* Equal height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hover Effect */
+.dashboard-card:hover {
+    transform: translateY(-5px);  /* Lift effect */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Making sure all cards have equal font size */
+.dashboard-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dashboard-card p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
         .dashboard-card {
             position: relative;
             padding: 20px;

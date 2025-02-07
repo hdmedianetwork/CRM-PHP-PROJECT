@@ -1302,7 +1302,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before, tabl
 	vertical-align: middle;
 	align-items: center;
 	position: relative;
-	height: 100%;
+	height: 40%;
 	font-size: 22px;
 	color: #ffffff;
 	letter-spacing: 0.050em;

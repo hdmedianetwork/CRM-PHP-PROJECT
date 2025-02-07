@@ -89,25 +89,46 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
             </div>
         </div>
         <div class="header-right">
-            <div class="user-info-dropdown">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                        <span class="user-icon">
-                            <img src="vendors/images/photo1.jpg" alt="">
-                        </span>
-                        <span class="user-name"><?php echo $_SESSION['agency_name']; ?></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                        <a class="dropdown-item" href="profile"><i class="dw dw-user1"></i> Profile</a>
-                        <a class="dropdown-item" href="logout"><i class="dw dw-logout"></i> Log Out</a>
-                    </div>
-                </div>
+    <a href="booktest" class="btn btn-primary book-test-btn">
+        <i class="dw dw-calendar1"></i> Book Test
+    </a> <!-- Button with proper styling -->
+    <div class="user-info-dropdown">
+        <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                <span class="user-icon">
+                    <img src="vendors/images/photo1.jpg" alt="">
+                </span>
+                <span class="user-name"><?php echo $_SESSION['agency_name']; ?></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                <a class="dropdown-item" href="profile"><i class="dw dw-user1"></i> Profile</a>
+                <a class="dropdown-item" href="logout"><i class="dw dw-logout"></i> Log Out</a>
             </div>
         </div>
     </div>
+</div>
+
+<style>
+    .book-test-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px; /* Adds spacing between the icon and text */
+        padding: 6px 12px;
+        font-size: 14px;
+        height: auto; /* Prevents unwanted height issues */
+        line-height: 1;
+    }
+    .header-right {
+        display: flex;
+        align-items: center; /* Ensures alignment */
+        gap: 10px; /* Adds spacing between elements */
+    }
+</style>
+
+    </div>
     <div class="left-side-bar" style="background-color:white; " >
         <div class="brand-logo" style="margin-top: 31px;" >
-            <a href="index">
+        <a href="index" style="height: 40%;">
                 <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="dark-logo">
                 <img src="./vendors/images/BOOK-MY-LAB.png" alt="" class="light-logo">
             </a>
@@ -120,34 +141,34 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
                 <ul id="accordion-menu">
                     <li class="dropdown">
                         <a href="index" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-house-1" style="color:black;"></span><span class="mtext" style="color:black;">Home</span>
+                            <span class="micon dw dw-house-1" style="color:black;"></span><span class="mtext" style="color:black;"><b>Home</b></span>
                         </a>
                     </li>
                     <li>
                         <a href="booktest" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Book Test</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Book Test</b></span>
                         </a>
                     </li>
                     <li>
                         <a href="allbookings" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Recent Bookings</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Recent Bookings</b></span>
                         </a>
                     </li>
                     <li>
                         <a href="wallet" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Wallet</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Wallet</b></span>
                         </a>
                     </li>
                     <li>
                         <a href="report" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Reports</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Reports</b></span>
                         </a>
                     </li>
 
 
                      <li>
                         <a href="accountstatement" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;">Account Statement</span>
+                            <span class="micon dw dw-invoice" style="color:black;"></span><span class="mtext" style="color:black;"><b>Account Statement</b></span>
                         </a>
                     </li>
 
@@ -155,7 +176,7 @@ if (!isset($_SESSION['id']) || !isset($_SESSION['email']) || !isset($_SESSION['a
                     
                     <li>
                         <a href="logout" class="dropdown-toggle no-arrow" style="position: fixed; bottom: 0;">
-                            <span class="micon dw dw-logout" style="color:black;"></span><span class="mtext" style="color:black;">Logout</span>
+                            <span class="micon dw dw-logout" style="color:black;"></span><span class="mtext" style="color:black;"><b>Logout</b></span>
                         </a>
                     </li>
                 </ul>

@@ -9,11 +9,17 @@
                   
                     <div class="col-md-8">
                         <h4 class="font-20 weight-500 mb-10 text-capitalize">
-                            Welcome back, <div class="weight-600 font-30 text-blue"><?php echo $_SESSION['agency_name']; ?></div>
+                            Dashboard <div class="weight-600 font-30 text-blue"></div>
                         </h4>
                        
                     </div>
-
+                    <div class="col-md-4 text-right" style="margin-bottom:12px;">
+                        <select id="dateFilter" class="form-control">
+                            <option value="15">Last 15 Days</option>
+                            <option value="30">Last 30 Days</option>
+                        </select>
+                    </div>
+                </div>
 
 
 					<div class="row gy-4"> 
@@ -136,7 +142,21 @@
     </style>
 
 
+<style>
+    #dateFilter {
+        max-width: 200px;
+        display: inline-block;
+        font-size: 14px;
+    }
+</style>
 
+<script>
+    document.getElementById("dateFilter").addEventListener("change", function() {
+        let days = this.value;
+        console.log("Filter selected: Last " + days + " days");
+        // Implement AJAX request to fetch filtered data if needed
+    });
+</script>
 		
 
 

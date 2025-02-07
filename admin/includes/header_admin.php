@@ -123,8 +123,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-toggle no-arrow">
-                            <span class="micon dw dw-invoice"></span><span class="mtext">Page</span>
+                        <a href="franchisemonitor" class="dropdown-toggle no-arrow">
+                            <span class="micon dw dw-invoice"></span><span class="mtext">Franchise Monitor</span>
                         </a>
                     </li>
                 </ul>

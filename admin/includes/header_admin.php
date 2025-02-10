@@ -127,6 +127,12 @@
                             <span class="micon dw dw-invoice"></span><span class="mtext">Franchise Monitor</span>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="uploadreports" class="dropdown-toggle no-arrow">
+                            <span class="micon dw dw-invoice"></span><span class="mtext">Upload Reports</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

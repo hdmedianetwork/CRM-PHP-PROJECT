@@ -21,6 +21,7 @@
                                 <th>Order Amount</th>
                                 <th>Test Name</th>
                                 <th>Booking Date</th>
+                                <th>Invoice</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,8 @@
             padding: 0;
         }
 
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             display: flex;
@@ -25,12 +27,13 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-top:15vh;
-            
-            
+            margin-top: 15vh;
+
+
         }
 
-        .search, .middle {
+        .search,
+        .middle {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -39,7 +42,9 @@
             width: 100%;
         }
 
-        .search input, .middle input, .middle select {
+        .search input,
+        .middle input,
+        .middle select {
             flex: 1;
             padding: 10px;
             font-size: 1rem;
@@ -48,7 +53,8 @@
         }
 
         button {
-            padding: 10px 20px; /* Adjusting padding to make buttons reasonably sized */
+            padding: 10px 20px;
+            /* Adjusting padding to make buttons reasonably sized */
             background-color: #007bff;
             color: white;
             border: none;
@@ -60,7 +66,7 @@
             background-color: #0056b3;
         }
 
-        .bottom{
+        .bottom {
             display: flex;
             flex-direction: row;
             gap: 10px;
@@ -85,19 +91,18 @@
             background: #0056b3;
         }
 
-    
+
         @media (min-width:1301px) {
-            .container{
+            .container {
                 width: 80vw;
                 margin-left: auto;
                 margin-right: 0px;
             }
-            
-        }
 
-        
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Recent Booking</h1>
@@ -145,5 +150,6 @@
         </div>
     </div>
 </body>
+
 </html>
 <?php include "includes/footer.php"; ?>

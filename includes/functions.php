@@ -279,6 +279,7 @@ function recentBookings()
         echo "<td>{$order_amount}</td>";
         echo "<td>{$selected_tests}</td>";
         echo "<td>{$formattedDate}</td>";
+        echo "<td><a href='invoice?sr_no=$sr_no&patient_name=$patient_name' target='_blank'>View Invoice</a></td>";
         echo "<tr>";
     }
 
@@ -342,6 +343,42 @@ function rechargeRequests()
         // }
     }
 }
+
+// function totalFranchiseBooking() is used to fetch the total number of bookings
+function totalFranchiseBooking()
+{
+
+    global $db_conn;
+
+    $franchise_id = $_SESSION['id'];
+    $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
+
+    $totalFranchiseBookingQuery = "SELECT COUNT(*) AS total_bookings FROM test_requests WHERE franchise_id = $franchise_id";
+    $query = query($totalFranchiseBookingQuery);
+    confirm($query);
+
+    $result = mysqli_fetch_assoc($query);
+    if ($result) {
+        echo $result['total_bookings'];
+    }
+
+    return null;
+}
+
+// function fetchTestCode used to fetch test details like code, B2C price
+// function fetchTestCode($test)
+// {
+//     $fetchTestDetails = "SELECT * FROM test_details WHERE test_name = '$test' ";
+//     $query = query($fetchTestDetails);
+//     confirm($query);
+
+//     while ($row = mysqli_fetch_array($query)) {
+
+//         $code = $row['code'];
+//         $lab_name = $row['lab_name'];
+//         $test_price = $row['B2C'];
+//     }
+// }
 
 /********************************** END OF FRANCHISE MODULE FUNCTIONS ************************************/
 // 
@@ -445,12 +482,12 @@ function updateLabDetails($lab_id)
 // function readAllTestPrice() is used to read all test details like name, price etc.
 function readAllTestPrice()
 {
-    global $db_conn;
+    // global $db_conn;
 
-    $franchise_id = $_SESSION['id'];
-    $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
+    // $franchise_id = $_SESSION['id'];
+    // $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
 
-    $readAllTestPriceQuery = "SELECT * FROM test_details WHERE franchise_id = '$franchise_id'";
+    $readAllTestPriceQuery = "SELECT * FROM test_details";
     $query = query($readAllTestPriceQuery);
     confirm($query);
 
@@ -468,7 +505,7 @@ function readAllTestPrice()
         echo "<td>
                 <a class='edit-button' href='test_update?update=$test_id'>Edit</a>
                 <a class='delete-button' href='#' onclick='confirmDelete($test_id)'>Delete</a>
-                </td>";
+            </td>";
         echo "</tr>";
     }
 }
@@ -500,11 +537,11 @@ function addTestPrice()
 // function readTestPrice() is used to read particular test details like name, price etc.
 function readTestPrice($test_id)
 {
-    global $db_conn;
-    $franchise_id = $_SESSION['id'];
-    $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
+    // global $db_conn;
+    // $franchise_id = $_SESSION['id'];
+    // $franchise_id = mysqli_real_escape_string($db_conn, $franchise_id);
 
-    $readAllTestPriceQuery = "SELECT * FROM test_details WHERE id = '$test_id' AND franchise_id = '$franchise_id'";
+    $readAllTestPriceQuery = "SELECT * FROM test_details WHERE id = '$test_id'";
     $query = query($readAllTestPriceQuery);
     confirm($query);
 

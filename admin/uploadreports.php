@@ -56,8 +56,10 @@
         <div class="table-responsive">
           <table class="table table-bordered">
             <thead class="table-light">
-              <tr>
+            <tr>
                 <th>Patient Name</th>
+                <th>Lab Name</th>
+                <!-- <th>Test Name</th> -->
                 <th>Test Date</th>
                 <th>Actions</th>
               </tr>
@@ -65,6 +67,8 @@
             <tbody>
               <tr>
                 <td>patient_name</td>
+                <td>lab_name</td>
+                <!-- <td>test_name</td> -->
                 <td>00/00/20XX</td>
                 <td>
                   <a href="src/images/download.jpg" download class="btn btn-outline-primary btn-sm">

@@ -3,6 +3,110 @@ include "includes/db.php";
 include "includes/header.php";
 
 ?>
+
+<style>
+
+.imagecontainer {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.imagecontainer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image fits inside without overflow */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.imagecontainer:hover {
+    transform: scale(1.05); /* Slightly enlarge the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a smooth shadow */
+}
+
+.imagecontainer:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+/* Ensure all cards are of equal height */
+.mcon {
+    width: 100%;
+    min-height: 280px; /* Set a minimum height for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: white;
+}
+
+/* Ensure image container size is fixed */
+.imagecontainer {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagecontainer img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure text content is aligned properly */
+.bottom {
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    min-height: 50px; /* Fixed height for uniformity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Styling */
+.bottom a {
+    margin-top: 10px;
+}
+
+/* Hover Effect on Whole Card */
+.mcon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Extra hover effect on image */
+.mcon:hover .imagecontainer img {
+    transform: scale(1.1);
+}
+
+
+</style>
+
+
 <link rel="stylesheet" href="src\styles\booktest.css" class="css">
 <div class="mobile-menu-overlay"></div>
 <div class="main-container">
@@ -46,6 +150,33 @@ include "includes/header.php";
             $query = "SELECT id, lab_name, lab_logo FROM labs LIMIT $startIndex, $labsPerPage";
             $result = mysqli_query($db_conn, $query);
             ?>
+
+            <!-- Labs List
+            <div class="product-wrap">
+                <div class="product-list">
+                    <ul class="row">
+                        <?php //while ($lab = mysqli_fetch_assoc($result)): 
+                        ?>
+                            <li class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                <div class="product-box" style="border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                                    <div class="producct-img" style="height: 150px; overflow: hidden;">
+                                        <img src="src/images/<?php //echo $lab['lab_logo']; 
+                                                                ?>" alt="" style="max-width: 100%; height: auto;">
+                                    </div>
+                                    <div class="product-caption" style="text-align: center;">
+                                        <h4><a href="#"><?php //echo htmlspecialchars($lab['lab_name']); 
+                                                        ?></a></h4>
+                                        <a href="select_test?lab_name=<?php //echo $lab['lab_name']; 
+                                                                        ?>" class="btn btn-outline-primary" style="margin-top: 10px;">Select</a>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php //endwhile; 
+                        ?>
+                    </ul>
+                </div>
+            </div> -->
+            <!-- Labs List -->
             <div class="product-wrap">
                 <div class="product-list">
                     <ul class="cards">
@@ -56,7 +187,8 @@ include "includes/header.php";
                                         <img src="src/images/<?php echo $lab['lab_logo']; ?>" alt="" style="max-width: 100%; height: auto;">
                                     </div>
                                     <div class="bottom" style="">
-                                        <h4> <img src="https://cdn-icons-png.flaticon.com/512/620/620423.png" alt=""> <a href="#"><?php echo htmlspecialchars($lab['lab_name']); ?></a></h4>
+                                    
+                                        <h4> <img src="https://cdn-icons-png.flaticon.com/512/620/620423.png" style="margin-right: 12px;" alt=""> <a href="#"><?php echo htmlspecialchars($lab['lab_name']); ?></a></h4>
                                         <a href="select_test?lab_name=<?php echo $lab['lab_name']; ?>" class="btn btn-outline-primary" style="margin-top: 10px;">Select</a>
                                     </div>
                                 </div>
